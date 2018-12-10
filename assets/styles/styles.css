@@ -1,0 +1,65 @@
+.squares-wrapper {
+
+}
+
+.squares-line {
+    display: flex;
+    justify-content: center;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    margin: 5px;
+    width: 100px;
+}
+
+.square:before {
+    content: '';
+    float: left;
+    padding-top: 100%;
+}
+
+.inner-square {
+    display: block;
+}
+
+.inner-square-circle {
+    width: 80%;
+    height: 80%;
+}
+
+.inner-square-circle:before {
+    display: block;
+    content: '';
+    border: 4px solid #3C4CE7;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.inner-square-cross {
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+
+.inner-square-cross:before,
+.inner-square-cross:after {
+    position: absolute;
+    display: block;
+    content: '';
+    border: 2px solid #E74C3C;
+    top: 50%;
+    width: 100%;
+}
+
+.inner-square-cross:before {
+    transform: rotate(45deg);
+}
+
+.inner-square-cross:after {
+    transform: rotate(-45deg);
+}

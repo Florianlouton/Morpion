@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="assets/styles/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="assets/styles/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+        <h1 class="navbar-brand text-white">
+            Morpion
+        </h1>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <section class="card">
+        <h2 class="card-header h5">
+            Paramétrage de la partie
+        </h2>
+
+        <div class="card-body">
+            <div class="form-group">
+                <label for="player-1">Nom du Joueur 1 :</label>
+
+                <input id="player-1" type="text" class="form-control" placeholder="Joueur 1">
+            </div>
+
+            <div class="form-group">
+                <label for="player-2">Nom du Joueur 2 :</label>
+
+                <input id="player-2" type="text" class="form-control" placeholder="Joueur 2">
+            </div>
+        </div>
+    </section>
+
+    <section class="card mt-4">
+        <h2 class="card-header h5">
+            Jeu
+        </h2>
+
+        <div class="card-body">
+            <div class="text-center">
+                Tour de <span id="current-player-name">Cédric</span>
+            </div>
+
+            <div class="squares-wrapper">
+                <div class="squares-line">
+                    <div class="square">
+                        <span class="inner-square"></span>
+                    </div>
+                    <div class="square">
+                        <span class="inner-square"></span>
+                    </div>
+                    <div class="square">
+                        <span class="inner-square"></span>
+                    </div>
+                </div>
+
+                <div class="squares-line">
+                    <div class="square">
+                        <span class="inner-square"></span>
+                    </div>
+                    <div class="square">
+                        <span class="inner-square"></span>
+                    </div>
+                    <div class="square">
+                        <span class="inner-square"></span>
+                    </div>
+                </div>
+
+                <div class="squares-line">
+                    <div class="square">
+                        <span class="inner-square"></span>
+                    </div>
+                    <div class="square">
+                        <span class="inner-square"></span>
+                    </div>
+                    <div class="square">
+                        <span class="inner-square"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="text-center mt-4">
+        <button id="reset-btn" type="button" class="btn btn-primary btn-raised">
+            Recommencer la partie
+        </button>
+    </div>
+</div>
+
+<script src="assets/scripts/variables.js"></script>
+<script src="assets/scripts/functions.js"></script>
+<script src="assets/scripts/listeners.js"></script>
+<script src="assets/scripts/scripts.js"></script>
+
+</body>
+</html>
